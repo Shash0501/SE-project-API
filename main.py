@@ -26,4 +26,4 @@ class Analysis(Resource):
 api.add_resource(Analysis , "/post/<int:postId>")
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug =  False , host="0.0.0.0")
