@@ -26,7 +26,7 @@ class Analysis(Resource):
         data = {}
         for keys in results:
             data[keys] = str(results[keys])
-        return {postId : data}
+        return data
 
 api.add_resource(Analysis , "/post/<int:postId>")
 
